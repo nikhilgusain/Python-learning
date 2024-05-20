@@ -93,56 +93,6 @@ for j, nam in enumerate(name):
     print(f"{j}, {nam}")
 
 
-#Data structures
-
-#list
-list1 = [1,2,3,4, "Nikhil", False, .02]
-print(list1)
-#converts to boolean equivalent to bool(lists)
-if list1:
-    print("not empty")
-#list of lists
-list2=[[1,2,3,4],['a','b','c']]
-print(list2)
-print(list2[0])
-print(len(list2))
-print([1,2]==[2,1])
-list1.append(77)
-print(list1)
-print(list1[::2])
-list1 = list(range(17))
-print(list1)
-list1.insert(4,'nimo')
-print("-----------------------")
-print(list1)
-#sets
-#all elements are unique
-#can not use append
-set1={1,2,35,4,6,}
-print(set1)
-set2={1,2,35,4,6,4,6,6,99,1}
-print(set2)
-print(len(set2))
-print({1,2,3} == {1,1,1,3,2,3})
-
-#tuple
-#can never be changed once declared
-#memory efficient
-#good to store x,y corrdinate pairs
-tup={1,2,3}
-print(tup)
-
-#dictionary
-#unique keys
-#if multiple former will replace previous
-dic1={
-    'apple':"red",
-    'bear':'animal',
-    1:'one'
-}
-print(dic1)
-print(dic1['apple'])
-print(dic1[1])
 
 
 #               class
