@@ -8,6 +8,17 @@ sum2 = z+x
 print("sum1=",sum1)
 print("sum2= ",sum2)
 
+#datatypes
+print(int(8.9))
+print(int(14/3))
+print(round(14/3, 2))
+print(round(14/3, 5))
+
+print(int('100'))
+#has to be string, base 2
+print(int('100',2))
+print(int('1ab',16))
+
 #loops
 print("while loop")
 i = 0 
@@ -87,6 +98,9 @@ for j, nam in enumerate(name):
 #list
 list1 = [1,2,3,4, "Nikhil", False, .02]
 print(list1)
+#converts to boolean equivalent to bool(lists)
+if list1:
+    print("not empty")
 #list of lists
 list2=[[1,2,3,4],['a','b','c']]
 print(list2)
@@ -95,8 +109,12 @@ print(len(list2))
 print([1,2]==[2,1])
 list1.append(77)
 print(list1)
-
-
+print(list1[::2])
+list1 = list(range(17))
+print(list1)
+list1.insert(4,'nimo')
+print("-----------------------")
+print(list1)
 #sets
 #all elements are unique
 #can not use append
@@ -165,3 +183,27 @@ class Dog:
 myDog = Dog("DOOBY")
 myDog.speak()
 
+st = 'My name is Nikhil Gusain'
+#does not include index 6
+st1 = st[0:6]
+print(st1)
+#include 6
+print(st[6:])
+
+st = 'my number is ' + str(55)
+print(st)
+st = 'my number is ' + "55"
+print(st)
+#f stands for formated
+st = f'my number is {55}'
+print(st)
+st = f'my number is {55} and twice of it is {55*2}'
+print(st)
+import math
+print(f'pi = {math.pi:.2f}')
+
+st = '''here is 
+a long 
+text 
+in diff line'''
+print(st)
