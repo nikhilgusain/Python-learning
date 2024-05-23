@@ -11,10 +11,10 @@ print(list2)
 print(list2[0])
 print(len(list2))
 print([1,2]==[2,1])
-#append(num) adds at end 
+#append(num) - adds at end 
 list1.append(77)
 print(list1)
-#pop() remove from end
+#pop() - remove from end
 list1.pop()
 print(list1)
 print(list1[::2])
@@ -81,7 +81,7 @@ print(dic1)
 print(dic1['apple'])
 print(dic1[1])
 print(dic1.keys())
-# dicName.get('search key', "return if not found" )
+# dicName.get('search key', "return this if not found" )
 animal = {
     'b':['bull', 'bat', 'bison'],
     'c':['cat', 'cow'],
@@ -91,13 +91,18 @@ animal = {
 animal['b'].append("black")#adds black if b exists
 print(animal)
 
+#if key do not exit will give error
+#animal['t'].append("tt") will give error
+
 #if c is in dictionary it will add like normal
 animal['c'].append("cebra")
 
 if 'z' not in animal:
-    animal['z'] =[]#creates new key in diec
-animal["z"] = "zabra"
-print(animal)
+    animal['z'] ="zebra"#creates new key in diec
 
-animlas = defaultdict(lsit, {})
-default(list,{'e':"elephant "})
+print(animal)
+print("___________")
+from collections import defaultdict
+animal = defaultdict(list)
+animal['k'].append("kangaroo")
+print(animal)
