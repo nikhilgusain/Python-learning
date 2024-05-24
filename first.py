@@ -96,7 +96,7 @@ for j, nam in enumerate(name):
 
 
 #               class
-# variable inside a class are called variable
+# variable inside a class are called attribute or properties
 # funcitons inside a class are called method
 print("--------------class----------------")
 #class name should start with capital letter 

@@ -1,12 +1,14 @@
-#prime number
-num = 100
-l=[2]
-for i in range(2, 100):
-    flag = 1
-    for j in l:
-        if i%j == 0:
-            flag = 0
-            break
-    if flag:
-        l.append(i)
-print(l)
+
+def operations(x, y, operations = "sum"):
+    # defaul value of operation = sum will be used if no input provided
+    if operations == "sum":
+        print('sum = ',x + y)
+    if operations == 'mul':
+        print("mul = ", x*y)
+    if operations == 'div':
+        print("Division =  ",x/y)
+    print(f"local variables ar{locals()})
+
+operations(10,5,)
+operations(2,3, operations = 'mul')
+operations(12,4,"div")
