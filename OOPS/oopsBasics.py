@@ -23,6 +23,7 @@
 # Instance attributes - unique to each instance
 #                       generally with in __init__ funtion
 
+''''
 class Car:
     _wheels = 4 # class attribute
 
@@ -36,19 +37,10 @@ class Car:
 
 car1=Car("Kwid",2005,23000,516)
 car2=Car("Nixan",2016,35000,798)
-
-print("-------------------------------------")
-print("-------------------------------------")
 print("\nWheels = ",Car._wheels)
-
-print("-------------------------------------")
-print("Car 1:")
-
-print("-------------------------------------")
+print("\n     Car 1:")
 car1.description()
-print("Car 2:")
-
-print("-------------------------------------")
+print("\n     Car 2:")
 car2.description()
 
 
@@ -64,7 +56,57 @@ def operations(x, y, operations = "sum"):
     if operations == 'div':
         print("Division =  ",x/y)
         
-print("-------------------------------------")
-operations(10,5,)
-operations(2,3, operations = 'mul')
-operations(12,4,"div")
+#
+#operations(10,5,)
+#operations(2,3, operations = 'mul')
+#operations(12,4,"div")
+'''
+
+'''
+class Wordset:
+    def __init__(self):
+        self.words = set()
+    def word(self,sen):
+        #text = (self.clean(sen)) # self is used because it will search for fun. within the class
+        text = Wordset.clean(sen) #can also work when usig static method instead
+        for item in text.split():
+            self.words.add(item)
+        return self.words
+    #non - static method
+    #def clean(self,sen):
+    #    text = sen.replace('!'," ").replace(','," ").replace("?"," ").replace("."," ")
+    #    return text
+    
+    # static method
+    # same for all instances of class
+    def clean(sen):
+        text = sen.replace('!'," ").replace(','," ").replace("?"," ").replace("."," ")
+        return text
+    
+set1 = Wordset().word("My name is Nikhil. I? hello,dhi")
+set2 = Wordset().word("I am form Uttarakhand,India 2005")
+print(set1)
+print(set2)
+
+'''
+class Wordset:
+    replacePun = ['!',"?",".",","]
+    def __init__(self):
+        self.words = set()
+    def addText(self,sen):
+        text = Wordset.clean(sen)
+        for item in text.split():
+            self.words.add(item)
+        return self.words
+
+    @staticmethod # called - decoratorddddd
+    def clean(sen):
+        text = sen
+        for punc in Wordset.replacePun:
+            text = sen.replace(punc,"")
+        return text.lower()
+
+wordSet1 = Wordset().addText("This is a, static methods")
+wordSet2 = Wordset().addText("wonder missioan! new. world one? piece")
+print(wordSet1)
+print(wordSet2)
