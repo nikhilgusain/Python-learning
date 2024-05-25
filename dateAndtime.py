@@ -1,5 +1,5 @@
 from datetime import datetime
-
+import time 
 print(datetime.now())
 sec = datetime.now().second
 min = datetime.now().minute
@@ -16,3 +16,9 @@ while(datetime.now().second != wait_until):
     print(datetime.now())
     # will print current date-time inclufin microsec till one sec passes
 
+print(f"current time in sec = {time.time()}")
+time.sleep(0.5) # pauses execution for x second
+
+# using next step we can see howmuch time a func took
+start = time.time()
+print(start - time.time())

@@ -1,5 +1,6 @@
 # class name begin with capital letter by convnetion
 # function begin by def
+# *args -passes a any number of positional arguments to a function
 # init stands for initialization
 # self is a reference to the current instance of the class. 
     # It is used within class methods to access 
