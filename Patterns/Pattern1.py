@@ -22,7 +22,7 @@ print("-------------------------------")
 1234
 12345
 '''
-i = 1;
+i = 1
 while i <= 5:
     j = 1 
     while j<=i:
@@ -39,8 +39,25 @@ while i <= 5:
 1234 4321       
 1234554321
 '''
-
+print("================================================")
 j = 1
+
 while j<=5:
-    while
-    
+    i = 1
+    while i <=j:
+        print(i, end = " ")
+        i+=1
+    k=1
+    while k<=5-j:
+        print(" ", end = " ")
+        k+=1
+    k=1
+    while k<=5-j:
+        print(" ", end = " ")
+        k+=1
+    i=j
+    while i >=1:
+        print(i, end = " ")
+        i-=1
+    print()
+    j+=1
