@@ -1,0 +1,11 @@
+Order ID,Customer Name,Category,Sub-Category,Quantity,Price,Order Date,Region,Total
+2001,Charlie,Books,Fiction,30,500,2024-12-01,North,1500
+2002,Charlie,Clothing,Shirt,30,1200,2024-11-02,South,3600
+2003,Bob,Electronics,Fiction,2.,500,2024-01-03,South,1000
+2004,Alice,Electronics,Fiction,10,1200,2024-11-04,South,1200
+2005,Bob,Books,Shirt,20,500,2024-11-05,West,1500
+2006,Diana,Clothing,Fiction,15,700,2024-12-06,West,1400
+2007,Evan,Electronics,Mobile,25,1200,2024-04-07,South,2400
+2008,Charlie,Electronics,Laptop,34,300,2024-08-08,North,900
+2009,Diana,Books,Fiction,8,300,2024-08-09,South,300
+2010,Diana,Books,Mobile,19,1200,2024-12-10,North,3600
