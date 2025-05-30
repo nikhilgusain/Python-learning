@@ -1,0 +1,7 @@
+This is my first data alaysis project.<br>
+Analyzed Happiness score of all countires and their contibutiong factor.<br>
+The data (csv file) contains, coutnries, their contributing factors and region(continent).<br>
+The data was first loaded<br>
+Then cleaned<br>
+Then analyzed<br>
+The findings are present at end of the jupyter file
